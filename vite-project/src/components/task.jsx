@@ -20,7 +20,8 @@ export const Task = () => {
        {addTask.map((items,index)=>{   
         return(
             <div key={index}>
-            <h3>{items.task}</h3>
+            <h3 className="text-3xl font-bold underline"
+            > {items.task  }</h3>
         </div>
         )
        })}
