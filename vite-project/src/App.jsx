@@ -22,7 +22,8 @@ function App() {
 
   return (
     <>
-    <div className="  bg-gray-400 min-h-screen place-items-center">
+    <div className="  bg-indigo-300 min-h-screen">
+    
     <AddTask setTask={setTask} task={task} inputString={inputString} setInputString={setInputString} />
       <TaskList task={task} setTask={setTask} inputString={inputString} setInputString={setInputString} />
     </div>

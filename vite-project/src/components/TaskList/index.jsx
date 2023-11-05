@@ -37,7 +37,7 @@ export const TaskList = (props) => {
     <div>
       {searchItem.map((item, index) => {
         return (
-          <div key={index}  className=" flex gap-5 border border-black px-2 py-1 mr-2 place-items-center">
+          <div key={index}  className=" flex gap-5  px-2 py-1 mr-2 justify-center ">
             <h3 className={`text-3xl font-bold ${item.isChecked===true ? "text-green-500" : "text-red-500"}`}>
               {item.task}
             </h3>
@@ -47,7 +47,7 @@ export const TaskList = (props) => {
               onChange={() => handleCheckboxChange(index)}
               className="mt-2"
             />
-            <Button className="bg-black text-white px-2 py-1" onClick={() => handleDeleteTask(index)}>Delete Task</Button>
+            <Button className="bg-blue-600 text-white px-2 py-1 border-2 border-black" onClick={() => handleDeleteTask(index)}>Delete Task</Button>
           </div>
         );
       })}

@@ -12,8 +12,11 @@ export const AddTask = (props) => {
   };
 
   return (
+    
     <>
-    <div className="flex items-center">
+ 
+    <div >
+      
     <input
         type="text"
         placeholder="Enter Your Task name"
@@ -22,10 +25,10 @@ export const AddTask = (props) => {
           props.setInputString(e.target.value);
         
         }}
-        className="border border-black px-2 py-1 mr-2"
+        className="border-2 border-black px-2 py-1 my-4 mx-4 shadow-md rounded-full"
 
       />
-      <button className="bg-black text-white px-2 py-1" onClick={onClickHandler}>Add Task</button>
+      <button className="bg-blue-600 text-white px-4 py-1 rounded-lg border-2 border-black" onClick={onClickHandler}>Add Task</button>
       
     </div>
     
